@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+    href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+ <script type="text/javascript" src="js/login.js"></script>
+       
+</head>
+
+<body>
+
+<div class="demo-container">
+        <h2>Login Form</h2>
+       
+        
+        
+    
+<div title="Login Form" style="margin-bottom:30px;">
+    <form id="login-form" action="" method="post" role="form">
+        <div class="input-row">
+            <span id="email-info"></span> <input type="email"
+                name="login-email-id" id="login-email-id"
+                class="input-field" placeholder="Email ID">
+        </div>
+        <div class="input-row">
+            <span id="password-info"></span> <input type="password"
+                name="login-password" id="login-password"
+                class="input-field" placeholder="Password">
+        </div>
+        <input type="button" class="btn-submit" value="Log In"
+            onclick="ajaxLogin()">
+    </form >
+	
+	
+
+    <div class="success-message" id="login-success-message"
+        style="display: none"></div>
+    <div class="error-message" id="login-error-message"
+        style="display: none"></div>
+    <div id="ajaxloader" style="display: none">
+        <img src="LoaderIcon.gif" id="loaderId" />
+    </div>
+	
+	
+</div>
+<a href="register.html" >Create Your Account</a>
+
+<a href="php/forgotpassword.php" >Forgot Password</a>
+
+    </div>
+	
+	
+
+</body>
+</html>
